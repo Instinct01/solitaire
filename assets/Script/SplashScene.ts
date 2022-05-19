@@ -11,9 +11,9 @@ export default class SlashScene extends cc.Component {
         // init logic
         this.label.string = "这是加载场景";
         setTimeout(()=> {
-            cc.director.loadScene("GameScene", ()=> {
-                cc.log(">> On Game Scene Launched Callback");
+            cc.director.loadScene("StartScene", ()=> {
+                cc.log(">> On Start Scene Launched Callback");
             });
-        }, 2000);
+        }, 1000);
     }
 }

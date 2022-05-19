@@ -1,9 +1,4 @@
-// Learn TypeScript:
-//  - https://docs.cocos.com/creator/manual/en/scripting/typescript.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
+import GameController from "./GameController";
 
 const {ccclass, property} = cc._decorator;
 
@@ -13,15 +8,16 @@ export default class GameScene extends cc.Component {
     @property(cc.Label)
     label: cc.Label = null;
 
-
-    // LIFE-CYCLE CALLBACKS:
+    private gameController: GameController = null;
 
     onLoad() {
-        cc.log(">> GameScene: onLoad");
+        this.gameController = new GameController();
     }
 
     start () {
         this.label.string = "这是游戏场景";
+
+        this.gameController.Start();
     }
 
     // update (dt) {}
