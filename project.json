@@ -1,0 +1,8 @@
+{
+  "engine": "cocos2d-html5",
+  "packages": "packages",
+  "version": "2.4.5",
+  "name": "solitaire",
+  "id": "23f3da9e-290c-4752-8c02-9f1bac73d58c",
+  "isNew": false
+}
