@@ -68,8 +68,8 @@
         0,
         0,
         1,
-        1,
-        1,
+        0.8,
+        0.8,
         1
       ]
     },
@@ -113,8 +113,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 10.4,
-      "height": 40
+      "width": 11.12,
+      "height": 50.4
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -170,10 +170,8 @@
     "_fontSize": 20,
     "_lineHeight": 40,
     "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "c2977d0b-345f-4f7b-8bc8-ace37324e34e"
-    },
-    "_isSystemFontUsed": false,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
     "_spacingX": 0,
     "_batchAsBitmap": false,
     "_styleFlags": 0,
@@ -514,7 +512,7 @@
         "__uuid__": "f4c02234-7e98-41f4-abfc-f768c3b615d2"
       },
       {
-        "__uuid__": "f4c02234-7e98-41f4-abfc-f768c3b615d2"
+        "__uuid__": "17f30fcc-d531-463f-8dd1-1342f31cd3fe"
       },
       {
         "__uuid__": "4bb509b9-7a17-4964-9032-b4a5c10246e9"
@@ -534,8 +532,12 @@
         "__uuid__": "f7358b62-c342-40a7-9d4a-cd2206634965"
       }
     ],
-    "texFrontBG": null,
-    "texbackBG": null,
+    "texFrontBG": {
+      "__uuid__": "6af92052-5d4f-48a8-b515-41207922b76c"
+    },
+    "texBackBG": {
+      "__uuid__": "f0ac88c7-42c2-4b25-9e05-a71d7a8b3513"
+    },
     "_id": ""
   },
   {
