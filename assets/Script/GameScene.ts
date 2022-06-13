@@ -1,25 +1,24 @@
 import GameController from "./GameController";
+import GameView from "./View/GameView/GameView";
 
 const {ccclass, property} = cc._decorator;
 
 @ccclass
 export default class GameScene extends cc.Component {
+
+
+
     @property(cc.Prefab)
-    pokerPrefab: cc.Prefab = null;
-
-    @property(cc.Node)
-    pokerContainer: cc.Node = null;
-
+    gameViewPrefab: cc.Prefab = null;
 
     private gameController: GameController = null;
-
-    onLoad() {
-        
-    }
+    private gameView: GameView = null;
 
     start () {
+        this.gameView = cc.instantiate(this.gameViewPrefab).getComponent(GameView);
+        this.node.addChild(this.gameView.node);
         this.gameController = new GameController();
-        this.gameController.init(this.pokerContainer, this.pokerPrefab);
+        this.gameController.Init(this.gameView);
         this.gameController.Start();
     }
 

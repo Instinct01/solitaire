@@ -1,5 +1,5 @@
 import { ESuit } from "./Config";
-import Poker from "./Poker";
+import Poker from "./View/GameView/Poker/Poker";
 
 const { ccclass, property } = cc._decorator;
 

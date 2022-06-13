@@ -1,4 +1,4 @@
-import { ESuit } from "./Config";
+import { ESuit } from "../../../Config";
 
 
 export default class Poker {
